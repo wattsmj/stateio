@@ -1,0 +1,125 @@
+{
+    "patterns": {
+        "Any": {
+                "hostname": "([a-zA-Z0-9_\\-]*)\\s+uptime",
+                "serial": "Processor board ID ([A-Z0-9]*)",
+                "sys_temp": "SYSTEM TEMPERATURE is ([A-Za-z0-9]*)",
+                "stp_portfast": "Portfast Default *is (enabled|disabled)",
+                "stp_bpduguard": "PortFast BPDU Guard Default  is (enabled|disabled)",
+                "stp_vlans": "(VLAN[0-9]{4}) ",
+                "stp_root_vlans": "Root bridge for: ([VLAN0-9, ]*)",
+                "stp_mode": "Switch is in (rapid-pvst|pvst) mode",
+                "stp_vlan_priority": "Bridge ID\\s+Priority\\s+([0-9]+)\\s+",
+                "aaa_new_model": "aaa (new-model)",
+                "aaa_auth_login": "aaa authentication login default (group\\s+tacacs\\+|local)?",
+                "aaa_auth_enable": "aaa authentication enable default (group\\s+tacacs\\+|enable)?",
+                "aaa_authz_console": "aaa authorization ([\\-A-Za-z]*)",
+                "aaa_authz_exec": "aaa authorization exec default group (group\\s+tacacs\\+|local)?",
+                "aaa_authz_cmd1": "aaa authorization commands 1 default group (group\\s+tacacs\\+|local)?",
+                "aaa_authz_cmd15": "aaa authorization commands 15 default (group\\s+tacacs\\+|local)?",
+                "aaa_accounting_cmd0": "aaa accounting commands 0 default start-stop group ([a-zA-Z0-9_\\-]*)",
+                "aaa_accounting_cmd1": "aaa accounting commands 1 default start-stop group ([a-zA-Z0-9_\\-]*)",
+                "aaa_accounting_cmd15": "aaa accounting commands 15 default start-stop group ([a-zA-Z0-9_\\-]*)",
+                "aaa_accounting_conn": "aaa accounting connection default start-stop group ([a-zA-Z0-9_\\-]*)",
+                "vlan": "([\\d]+)\\s+([A-Za-z0-9\\-_\\.]*)\\s+active",
+                "interface": "(Fa[\\dA-Za-z/\\.]*|Gi[\\dA-Za-z/\\.]*|T[eu][\\dA-Za-z/\\.]*|Po[\\dA-Za-z]*|Lo[\\dA-Za-z]*)",
+                "tacacs_src" : "tacacs source-interface ([a-zA-Z0-9\\/\\-\\.]+)",
+                "tacacs_server" : "(\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3})",
+                "tacacs_timeout" : "tacacs-server timeout (\\d+)"
+        },
+        "IE-3010-24TC": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "IE-3010-16S-8PC": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "WS-C4510R+E": {
+            "Any": {
+                "os": "Version ([\\d\\.A-Z]*) RELEASE",
+                "psu_a_status": "PS1\\s+PWR-C45-1400DC-P\\s+DC 1400W\\s+([a-zA-Z]*) ",
+                "psu_b_status": "PS2\\s+PWR-C45-1400DC-P\\s+DC 1400W\\s+([a-zA-Z]*) ",
+                "sys_temp": "(no temperature alarms)"
+            }
+        },
+        "CISCO3945-CHASSIS": {
+            "Any": {
+                "psu_a_status": "Internal Power Supply 1 12V Output Status: ([A-Za-z]*)",
+                "psu_b_status": "Internal Power Supply 2 12V Output Status: ([A-Za-z]*)",
+                "sys_temp": "CPU temperature: \\d\\d Celsius, (.*)"
+            }
+        },
+        "WS-C4900M": {
+            "Any": {
+                "psu_a_status": "PS1\\s+PWR-C49M-1000AC\\s+AC\\s+960W\\s+([a-zA-Z]*)\\s+",
+                "psu_b_status": "PS2\\s+PWR-C49M-1000AC\\s+AC\\s+960W\\s+([a-zA-Z]*)\\s+",
+                "sys_temp": "(no temperature alarms)"
+            }
+        },
+        "ME-3600X-24FS-M": {
+            "Any": {
+                "psu_a_status": "POWER SUPPLY 1 is DC ([a-zA-Z]*)",
+                "psu_b_status": "POWER SUPPLY 2 is DC ([a-zA-Z]*)"
+            }
+        },
+        "WS-C3750X-48P": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "WS-C3750X-12S": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "WS-C3750X-24S": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "WS-C3750X-24P": {
+            "Any": {
+                "psu_a_status": "\n1A\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s",
+                "psu_b_status": "\n1B\\s*[a-zA-Z0-9\\-]*\\s*[a-zA-Z0-9]*\\s([a-zA-Z0-9]*)\\s"
+            }
+        },
+        "ME-3800X-24FS-M": {
+            "Any": {
+                "psu_a_status": "POWER SUPPLY 1 is DC ([a-zA-Z]*)",
+                "psu_b_status": "POWER SUPPLY 2 is DC ([a-zA-Z]*)"
+            }
+        }
+    },
+    "commands": {
+        "Any": {
+            "sh_ospf_neighbours": "sh ip ospf nei",
+            "sh_run": "show running-config",
+            "sh_version": "show version",
+            "sh_env": "show env all",
+            "sh_stp_sum": "show spanning-tree summary",
+            "sh_stp_vlan": "show spanning-tree vlan",
+            "sh_ip_route": "show ip route",
+            "sh_tacacs" : "show tacacs",
+            "sh_vlan": "show vlan",
+            "sh_int_trunk": "show interface trunk"
+        },
+        "WS-C4510R+E": {
+            "Any": {
+                "sh_env": "show env"
+            }
+        },
+        "WS-C4900M": {
+            "Any": {
+                "sh_env": "show env"
+            }
+        }
+    }
+}

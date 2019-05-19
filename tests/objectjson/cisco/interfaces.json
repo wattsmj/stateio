@@ -1,0 +1,43 @@
+{
+    "Interface": {
+        "patterns": {
+            "Any": {
+                "int_vlans": "(none|\\s[\\d,\\-]+\\s)",
+                "media": "media type is ([\\d/\\-A-Za-z ]*)",
+                "int_ip": "Internet address is ([1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2})",
+                "status": "line protocol is (up|down)",
+                "speed": "BW (\\d*) ",
+                "description": "Description: (.*)",
+                "hardware": "Hardware is ([A-Za-z0-9 _]*)",
+                "int_mask": "Internet address is [1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}/([\\d]{1,2})",
+                "duplex" : "([a-zA-Z]*).[dD]uplex,",
+                "hsrp_ip" : "Virtual IP address is (([1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}))",
+                "switch_mode" : "Administrative Mode:[a-z\\s]+(trunk|access)",
+                "int_vrf": "VPN Routing/Forwarding \"([A-Za-z]+)\""
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_int_trunk": "show interface",
+                "sh_int_trunk_suffix": " trunk | begin Vlans allowed on trunk",
+                "sh_int": "show interface",
+                "sh_ip": "show ip interface",
+                "sh_standby" : "show standby",
+                "sh_switchport" : "show interface",
+                "sh_switchport_suffix" : " switchport"
+            }
+        }
+    },
+    "Interfaces": {
+        "patterns": {
+            "Any": {
+                "interfaces": "(Vlan\\d{1,4}|Fast[\\dA-Za-z/\\.]*|Gi[\\dA-Za-z/\\.]*|Ten[\\dA-Za-z/\\.]*|Po[\\d\\-A-Za-z]*|Lo[\\dA-Za-z]*)"
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_ip_brief": "show ip int brief"
+            }
+        }
+    }
+}

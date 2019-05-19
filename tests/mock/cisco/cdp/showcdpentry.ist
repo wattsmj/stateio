@@ -1,0 +1,21 @@
+-------------------------
+Device ID: GLEFCS_SC1.ad.bgep.co.uk
+Entry address(es): 
+  IP address: 10.228.138.98
+Platform: cisco IE-3010-16S-8PC,  Capabilities: Router Switch IGMP 
+Interface: GigabitEthernet2/6,  Port ID (outgoing port): GigabitEthernet0/1
+Holdtime : 139 sec
+
+Version :
+Cisco IOS Software, IE3010 Software (IE3010-IPSERVICESK9-M), Version 15.2(1)EY, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2014 by Cisco Systems, Inc.
+Compiled Tue 21-Jan-14 21:23 by prod_rel_team
+
+advertisement version: 2
+Protocol Hello:  OUI=0x00000C, Protocol ID=0x0112; payload len=27, value=00000000FFFFFFFF010221FF00000000000064A0E73AF180FF0000
+VTP Management Domain: 'Glendower-FCS'
+Native VLAN: 1
+Duplex: full
+Management address(es): 
+  IP address: 10.228.138.98

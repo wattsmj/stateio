@@ -1,0 +1,18 @@
+{
+    "patterns": {
+        "Any": {
+            "chassis": "[Cc]isco ([A-Z0-9+\\-/]*)\\s+\\(",
+            "os": "Version ([\\d\\.]*\\([\\da-z]*\\)[A-Za-z\\d]*),"
+    },
+        "WS-C4510R+E": {
+            "Any": {
+                "os": "Version ([\\d\\.A-Z]*) RELEASE"
+            }
+        }
+    },
+    "commands": {
+        "Any": {
+            "sh_version": "show version"
+        }
+    }
+}

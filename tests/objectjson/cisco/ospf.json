@@ -1,0 +1,31 @@
+{
+    "OSPFInterface": {
+        "patterns": {
+            "Any": {
+                "routerid": "Router ID ([0-9\\.]+)",
+                "processid": "Process ID ([\\d]+),",
+                "cost": "Cost: ([0-9]+)",
+                "areaid": "Area ([0-9]+)",
+                "routed": "(Hello due)",
+                "check_routed": "Hello due"
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_ospf_ints": "show ip ospf interface"
+            }
+        }
+    },
+    "OSPF": {
+        "patterns": {
+            "Any": {
+                "ospf_ints": "(Loopback[0-9]+|Vlan[0-9]+|[a-zA-Z]*Ethernet[0-9/\\.]+)\\s+is\\s+"
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_ospf_ints": "show ip ospf interface"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+Switch2#show spanning-tree summary
+Switch is in pvst mode
+Root bridge for: VLAN0001, VLAN0002
+EtherChannel misconfig guard is enabled
+Extended system ID           is enabled
+Portfast Default             is disabled
+PortFast BPDU Guard Default  is disabled
+Portfast BPDU Filter Default is disabled
+Loopguard Default            is disabled
+UplinkFast                   is disabled
+BackboneFast                 is disabled
+Pathcost method used         is short
+Name                   Blocking Listening Learning Forwarding STP Active
+---------------------- -------- --------- -------- ---------- ----------
+VLAN0001                     1         0        0          2          3
+VLAN0002                     1         0        0          1          2
+---------------------- -------- --------- -------- ---------- ----------
+6 vlans                      6         0        0          7         13

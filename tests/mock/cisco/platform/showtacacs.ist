@@ -1,0 +1,20 @@
+Tacacs+ Server -  public  :  1.1.1.1/49
+              Socket opens:      71437
+             Socket closes:      69129
+             Socket aborts:          0
+             Socket errors:          0
+           Socket Timeouts:          2
+   Failed Connect Attempts:        183
+        Total Packets Sent:      80825
+        Total Packets Recv:      80771
+
+
+Tacacs+ Server -  public  :  2.2.2.2/49
+              Socket opens:        914
+             Socket closes:        896
+             Socket aborts:          0
+             Socket errors:          0
+           Socket Timeouts:          0
+   Failed Connect Attempts:          0
+        Total Packets Sent:        966
+        Total Packets Recv:        871

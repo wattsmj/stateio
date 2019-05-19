@@ -1,0 +1,29 @@
+{
+    "CDPEntry" : {
+        "patterns": {
+            "Any": {
+                "cdp_nei_ip": "IP address: ([1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2}\\.[1-2]?[0-9]{1,2})",
+                "cdp_nei_local_int": "Interface: ([a-zA-Z0-9/]*)",
+                "cdp_nei_remote_int": "Port ID \\(outgoing port\\): ([a-zA-Z0-9/\\.]*)",
+                "cdp_nei_chassis" : "Platform:\\s+cisco\\s+([A-Za-z0-9\\-\\_]+)\\s*,"
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_cdp_entry": "show cdp entry"
+            }
+        }
+    },
+    "CDP" : {
+        "patterns": {
+            "Any": {
+                "cdp_neighbours" : "(SW\\d)"
+            }
+        },
+        "commands": {
+            "Any": {
+                "sh_cdp_neighbours" : "show cdp neighbors"
+            }
+        }
+    }
+}

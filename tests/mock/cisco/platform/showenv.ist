@@ -1,0 +1,54 @@
+no temperature alarms
+
+
+Module Sensor                     Temperature          Status      
+------+--------------------------+--------------------+------------
+1      air inlet                  35C (41C,56C,66C)              ok
+1      air outlet (back)          38C (45C,59C,69C)              ok
+1      air outlet (front)         38C (43C,57C,67C)              ok
+3      Air inlet                  40C (56C,68C,71C)              ok
+3      Air inlet remote           33C (46C,59C,62C)              ok
+3      Air outlet                 41C (66C,76C,79C)              ok
+3      Air outlet remote          35C (60C,71C,74C)              ok
+5      Stub A                     41C (58C,71C,74C)              ok
+5      Stub B                     35C (54C,68C,71C)              ok
+5      XPP                        51C (67C,81C,84C)              ok
+5      VFE                        58C (79C,90C,93C)              ok
+5      NFE                        49C (68C,80C,83C)              ok
+5      CPU                        53C (69C,83C,86C)              ok
+5      FPGA                       40C (57C,71C,74C)              ok
+6      Stub A                     39C (58C,71C,74C)              ok
+6      Stub B                     34C (54C,68C,71C)              ok
+6      XPP                        49C (67C,81C,84C)              ok
+6      VFE                        55C (79C,90C,93C)              ok
+6      NFE                        48C (68C,80C,83C)              ok
+6      CPU                        51C (69C,83C,86C)              ok
+6      FPGA                       40C (57C,71C,74C)              ok
+
+Power                                             Fan      Inline
+Supply  Model No          Type       Status       Sensor   Status
+------  ----------------  ---------  -----------  -------  -------
+PS1     PWR-C45-1400DC-P  DC 1400W   good         good     good   
+PS2     PWR-C45-1400DC-P  DC 1400W   good         good     good   
+
+Power supplies needed by system    : 1
+Power supplies currently available : 2
+
+Chassis Type : WS-C4510R+E
+
+Power consumed by backplane : 40 Watts
+
+Switch Bandwidth Utilization : 15%
+
+Supervisor Led Color : Green
+
+Module  1 Status Led Color  : Green          
+Module  2 Status Led Color  : Green          
+Module  3 Status Led Color  : Green           PoE Led Color : Green          
+Module  5 Status Led Color  : Green          
+Module  6 Status Led Color  : Green          
+
+Fantray : Good
+Fantray removal timeout : 30
+
+Power consumed by Fantray : 255 Watts

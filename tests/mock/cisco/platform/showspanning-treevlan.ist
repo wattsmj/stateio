@@ -1,0 +1,17 @@
+VLAN0002
+  Spanning tree enabled protocol rstp
+  Root ID    Priority    4098
+             Address     30f7.0dca.ca80
+             This bridge is the root
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+
+  Bridge ID  Priority    4098   (priority 4096 sys-id-ext 2)
+             Address     30f7.0dca.ca80
+             Hello Time   2 sec  Max Age 20 sec  Forward Delay 15 sec
+             Aging Time  300 sec
+
+Interface           Role Sts Cost      Prio.Nbr Type
+------------------- ---- --- --------- -------- --------------------------------
+Gi3/1               Desg FWD 4         128.257  P2p 
+Te5/1               Desg FWD 2         128.513  P2p 
+Te6/1               Desg FWD 2         128.641  P2p 
